@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prathyush Dinesh // Agent • Live IPs • Music</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Syne, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FAF7F2',
+            sand: '#F2ECE1',
+            ink: '#141413',
+            coral: '#FF4D2D',
+            gold: '#FFD12E',
+            mint: '#00C49A',
+            cobalt: '#2B59FF',
+            violet: '#9B51E0'
+          },
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          boxShadow: {
+            'pop': '4px 4px 0px 0px #141413',
+            'pop-sm': '2px 2px 0px 0px #141413',
+            'pop-lg': '6px 6px 0px 0px #141413',
+            'pop-coral': '4px 4px 0px 0px #FF4D2D',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Daylight Pop-Culture Halftone & Zine Texture */
+    body {
+      background-color: #FAF7F2;
+      color: #141413;
+      background-image: radial-gradient(#141413 0.85px, transparent 0.85px);
+      background-size: 20px 20px;
+      background-position: 0 0;
+    }
+
+    /* Overlay to soften the dot grid */
+    .bg-soft-dots {
+      background: linear-gradient(180deg, rgba(250,247,242,0.86) 0%, rgba(250,247,242,0.92) 100%);
+    }
+
+    /* Neo-brutalist Pop Card */
+    .pop-card {
+      background: #FFFFFF;
+      border: 2px solid #141413;
+      box-shadow: 4px 4px 0px 0px #141413;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .pop-card-interactive:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0px 0px #141413;
+    }
+
+    .pop-btn {
+      border: 2px solid #141413;
+      box-shadow: 3px 3px 0px 0px #141413;
+      transition: all 0.12s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .pop-btn:hover {
+      transform: translate(-1.5px, -1.5px);
+      box-shadow: 4.5px 4.5px 0px 0px #141413;
+    }
+    .pop-btn:active {
+      transform: translate(2px, 2px);
+      box-shadow: 1px 1px 0px 0px #141413;
+    }
+
+    /* Ticket stub side cutouts */
+    .ticket-stub {
+      position: relative;
+      background-image: radial-gradient(circle at 0 50%, #FAF7F2 6px, transparent 7px),
+                        radial-gradient(circle at 100% 50%, #FAF7F2 6px, transparent 7px);
+    }
+
+    /* Perforated divider */
+    .perforated-line {
+      background-image: linear-gradient(to right, #141413 45%, rgba(255,255,255,0) 0%);
+      background-position: bottom;
+      background-size: 10px 2px;
+      background-repeat: repeat-x;
+    }
+
+    /* Custom Scrollbar for inner containers */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F2ECE1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #141413;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FF4D2D;
+    }
+
+    /* Marquee Ticker Animation */
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 28s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+
+    /* Barcode Stripes */
+    .barcode-bars {
+      background: repeating-linear-gradient(
+        90deg,
+        #141413 0px,
+        #141413 3px,
+        transparent 3px,
+        transparent 6px,
+        #141413 6px,
+        #141413 7px,
+        transparent 7px,
+        transparent 11px,
+        #141413 11px,
+        #141413 16px,
+        transparent 16px,
+        transparent 19px
+      );
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold selection:text-ink min-h-screen flex flex-col">
+
+  <!-- Soft Dot Wrapper -->
+  <div class="bg-soft-dots flex-1 flex flex-col pb-20 lg:pb-8">
+
+    <!-- TOP FESTIVAL WRISTBAND MARQUEE (Ultra thin pop-culture accent) -->
+    <div class="bg-ink text-cream border-b-2 border-ink overflow-hidden py-1.5 text-xs font-mono tracking-wider uppercase select-none">
+      <div class="animate-marquee space-x-8">
+        <span>★ ALL ACCESS BACKSTAGE CREDENTIAL</span>
+        <span class="text-gold">● PRATHYUSH DINESH</span>
+        <span>★ TALENT AGENT & LIVE IP CURATOR</span>
+        <span class="text-coral">● ROSTER ARTISTS & TOURING</span>
+        <span>★ LANDMARK FESTIVALS & INDIA TOURS</span>
+        <span class="text-mint">● BANGALORE, INDIA // WORLDWIDE</span>
+        <span>★ ALL ACCESS BACKSTAGE CREDENTIAL</span>
+        <span class="text-gold">● PRATHYUSH DINESH</span>
+        <span>★ TALENT AGENT & LIVE IP CURATOR</span>
+        <span class="text-coral">● ROSTER ARTISTS & TOURING</span>
+        <span>★ LANDMARK FESTIVALS & INDIA TOURS</span>
+        <span class="text-mint">● BANGALORE, INDIA // WORLDWIDE</span>
+      </div>
+    </div>
+
+    <!-- STICKY QUICK GO-TO COMMAND BAR -->
+    <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur-md border-b-2 border-ink shadow-sm">
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 py-2.5 flex flex-wrap items-center justify-between gap-2">
+        
+        <!-- Left Brand Stamp -->
+        <a href="#top" onclick="handleQuickJump('all')" class="flex items-center gap-2.5 group">
+          <div class="w-8 h-8 rounded-lg bg-coral text-white border-2 border-ink shadow-pop-sm flex items-center justify-center font-display font-extrabold text-sm group-hover:bg-gold group-hover:text-ink transition-colors">
+            PD
+          </div>
+          <div class="leading-none">
+            <span class="font-display font-extrabold text-sm sm:text-base tracking-tight block">PRATHYUSH DINESH</span>
+            <span class="font-mono text-[10px] text-ink/70 uppercase tracking-widest">All Access Pass</span>
+          </div>
+        </a>
+
+        <!-- Center Quick Go-To Buttons -->
+        <nav aria-label="Quick Go-To Sections" class="flex items-center gap-1.5 sm:gap-2 overflow-x-auto max-w-full py-1 no-scrollbar">
+          <span class="hidden xl:inline-flex items-center gap-1 font-mono text-[11px] font-bold uppercase px-2 py-1 text-ink/60">
+            <i class="ph-bold ph-lightning text-coral"></i> Quick Go-To:
+          </span>
+
+          <button onclick="handleQuickJump('all')" id="nav-btn-all" class="quick-nav-btn pop-btn bg-gold text-ink font-mono text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 whitespace-nowrap">
+            <i class="ph-bold ph-squares-four"></i>
+            <span>Overview</span>
+          </button>
+
+          <button onclick="handleQuickJump('artists')" id="nav-btn-artists" class="quick-nav-btn pop-btn bg-white hover:bg-gold/40 text-ink font-mono text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 whitespace-nowrap">
+            <i class="ph-bold ph-microphone-stage text-coral"></i>
+            <span>Artists</span>
+          </button>
+
+          <button onclick="handleQuickJump('ips')" id="nav-btn-ips" class="quick-nav-btn pop-btn bg-white hover:bg-gold/40 text-ink font-mono text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 whitespace-nowrap">
+            <i class="ph-bold ph-ticket text-cobalt"></i>
+            <span>Live IPs & Tours</span>
+          </button>
+
+          <button onclick="handleQuickJump('career')" id="nav-btn-career" class="quick-nav-btn pop-btn bg-white hover:bg-gold/40 text-ink font-mono text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 whitespace-nowrap">
+            <i class="ph-bold ph-sliders-horizontal text-mint"></i>
+            <span>Career Track</span>
+          </button>
+
+          <button onclick="openContactModal()" class="pop-btn bg-coral text-white hover:bg-coral/90 font-mono text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 whitespace-nowrap">
+            <i class="ph-bold ph-paper-plane-tilt"></i>
+            <span>Book / Contact</span>
+          </button>
+        </nav>
+
+        <!-- Right Layout Mode Switcher (Compact Zero-Scroll vs Full Bento) -->
+        <div class="hidden md:flex items-center bg-sand border-2 border-ink rounded-full p-0.5 text-xs font-mono">
+          <button id="mode-compact-btn" onclick="setLayoutMode('compact')" class="px-2.5 py-1 rounded-full font-bold transition-all bg-ink text-white flex items-center gap-1" title="Zero-scroll tabbed stage deck">
+            <i class="ph-bold ph-tabs"></i> Zero-Scroll Deck
+          </button>
+          <button id="mode-bento-btn" onclick="setLayoutMode('bento')" class="px-2.5 py-1 rounded-full font-bold transition-all text-ink/75 hover:text-ink flex items-center gap-1" title="Show all sections stacked in a compact bento grid">
+            <i class="ph-bold ph-rows"></i> Full Bento
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main id="top" class="max-w-7xl w-full mx-auto px-3 sm:px-6 pt-5 pb-8 flex-1">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+        <!-- LEFT COLUMN: VIP ALL-ACCESS LAMINATE PASS (Sticky on Desktop) -->
+        <aside class="lg:col-span-4 lg:sticky lg:top-20">
+          <div class="pop-card rounded-2xl overflow-hidden bg-white relative">
+            
+            <!-- Lanyard Punch Hole & Top VIP Header -->
+            <div class="bg-ink text-white px-4 pt-3 pb-3 border-b-2 border-ink relative">
+              <!-- Lanyard Slot Graphic -->
+              <div class="w-16 h-3 bg-cream border-2 border-ink rounded-full mx-auto mb-2.5 shadow-inner"></div>
+              
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-1.5">
+                  <span class="inline-block w-2.5 h-2.5 rounded-full bg-mint animate-pulse"></span>
+                  <span class="font-mono text-[11px] font-extrabold tracking-widest uppercase text-gold">ALL ACCESS // VIP</span>
+                </div>
+                <span class="font-mono text-[10px] bg-coral text-white px-2 py-0.5 rounded border border-white/20 font-bold">
+                  STAGE & ROSTER
+                </span>
+              </div>
+            </div>
+
+            <!-- Pass Body -->
+            <div class="p-4 sm:p-5">
+              <!-- Profile Identity Row -->
+              <div class="flex items-center gap-4">
+                <div class="relative shrink-0">
+                  <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-xl border-2 border-ink shadow-pop-sm overflow-hidden bg-gold">
+                    <img 
+                      src="https://prathyushdinesh.github.io/prathyush/profile.png" 
+                      alt="Prathyush Dinesh"
+                      class="w-full h-full object-cover object-top"
+                      onerror="this.onerror=null; this.src='https://placehold.co/240x240/FFD12E/141413?text=PD';"
+                    />
+                  </div>
+                  <span class="absolute -bottom-1.5 -right-1.5 bg-mint text-ink border-2 border-ink font-mono text-[10px] font-extrabold px-1.5 py-0.5 rounded-md shadow-pop-sm">
+                    LIVE
+                  </span>
+                </div>
+
+                <div class="min-w-0 flex-1">
+                  <div class="inline-flex items-center gap-1 bg-sand border border-ink px-2 py-0.5 rounded-md font-mono text-[10px] font-bold uppercase mb-1">
+                    <i class="ph-fill ph-map-pin text-coral"></i> Bangalore, India
+                  </div>
+                  <h1 class="font-display font-extrabold text-xl sm:text-2xl leading-tight tracking-tight text-ink">
+                    Prathyush Dinesh
+                  </h1>
+                  <p class="font-mono text-xs font-bold text-coral mt-0.5">
+                    Agent // Live IPs // Music
+                  </p>
+                </div>
+              </div>
+
+              <!-- Bio Summary -->
+              <p class="mt-4 text-xs sm:text-sm text-ink/85 leading-relaxed bg-cream p-3 rounded-xl border border-ink/20">
+                Event Manager and Agent with expertise in <strong>IP Curation, Partnerships, and Marketing</strong>. Proven in crafting engaging brand experiences through dynamic event curation and execution. Effective collaborator and strategic planner, adept at driving brand visibility across the live music ecosystem.
+              </p>
+
+              <!-- Direct Contact Quick Actions -->
+              <div class="mt-4 space-y-2">
+                <div class="flex items-center gap-2">
+                  <a href="mailto:prathyushdinesh@gmail.com" class="pop-btn flex-1 bg-gold hover:bg-gold/90 text-ink font-mono text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 truncate">
+                    <i class="ph-bold ph-envelope-simple text-sm"></i>
+                    <span class="truncate">prathyushdinesh@gmail.com</span>
+                  </a>
+                  <button onclick="copyText('prathyushdinesh@gmail.com', 'Email address copied!')" class="pop-btn bg-white hover:bg-sand text-ink p-2.5 rounded-xl" title="Copy Email Address">
+                    <i class="ph-bold ph-copy text-sm"></i>
+                  </button>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="tel:+919902602989" class="pop-btn bg-white hover:bg-mint/20 text-ink font-mono text-xs font-bold py-2 px-3 rounded-xl flex items-center justify-center gap-1.5">
+                    <i class="ph-bold ph-phone-call text-mint"></i>
+                    <span>+91 9902602989</span>
+                  </a>
+                  <button onclick="copyText('+919902602989', 'Phone number copied!')" class="pop-btn bg-white hover:bg-sand text-ink font-mono text-xs font-bold py-2 px-3 rounded-xl flex items-center justify-center gap-1.5">
+                    <i class="ph-bold ph-clipboard-text text-coral"></i>
+                    <span>Copy Phone</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Social Links Row -->
+              <div class="mt-4 pt-3 border-t-2 border-dashed border-ink/30">
+                <div class="flex items-center justify-between gap-2">
+                  <a href="https://www.linkedin.com/in/prathyush-dinesh-57b28447/" target="_blank" rel="noopener noreferrer" class="pop-btn flex-1 bg-[#0A66C2] text-white font-mono text-xs font-bold py-2 rounded-xl flex items-center justify-center gap-1.5">
+                    <i class="ph-bold ph-linkedin-logo text-sm"></i> LinkedIn
+                  </a>
+                  <a href="https://www.instagram.com/iampraty/" target="_blank" rel="noopener noreferrer" class="pop-btn flex-1 bg-coral text-white font-mono text-xs font-bold py-2 rounded-xl flex items-center justify-center gap-1.5">
+                    <i class="ph-bold ph-instagram-logo text-sm"></i> Instagram
+                  </a>
+                  <a href="https://www.imdb.com/name/nm18253220/" target="_blank" rel="noopener noreferrer" class="pop-btn flex-1 bg-gold text-ink font-mono text-xs font-bold py-2 rounded-xl flex items-center justify-center gap-1.5">
+                    <i class="ph-bold ph-film-slate text-sm"></i> IMDb
+                  </a>
+                </div>
+              </div>
+
+              <!-- Backstage Barcode Footer -->
+              <div class="mt-4 pt-3 border-t-2 border-ink flex items-center justify-between gap-3">
+                <div class="barcode-bars h-7 flex-1 opacity-90"></div>
+                <div class="font-mono text-[10px] font-bold text-right leading-tight shrink-0">
+                  <div>AUTH: ATL-CAN</div>
+                  <div class="text-ink/60">VIP CREDENTIAL</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </aside>
+
+        <!-- RIGHT COLUMN: INTERACTIVE POP-CULTURE STAGE DECK -->
+        <div class="lg:col-span-8 space-y-5">
+
+          <!-- COMPACT SEARCH & STAGE CONTROLLER BAR -->
+          <div class="pop-card rounded-2xl p-3 sm:p-4 bg-white">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              
+              <!-- Stage Selector Tabs -->
+              <div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0">
+                <button onclick="handleQuickJump('all')" data-tab="all" class="stage-tab px-3 py-1.5 rounded-xl font-mono text-xs font-bold border-2 border-ink bg-ink text-white transition-all flex items-center gap-1.5 shrink-0">
+                  <span>⚡ Overview</span>
+                </button>
+                <button onclick="handleQuickJump('artists')" data-tab="artists" class="stage-tab px-3 py-1.5 rounded-xl font-mono text-xs font-bold border-2 border-ink bg-sand hover:bg-gold transition-all flex items-center gap-1.5 shrink-0">
+                  <span>🎤 Artists</span>
+                </button>
+                <button onclick="handleQuickJump('ips')" data-tab="ips" class="stage-tab px-3 py-1.5 rounded-xl font-mono text-xs font-bold border-2 border-ink bg-sand hover:bg-gold transition-all flex items-center gap-1.5 shrink-0">
+                  <span>🎪 Live IPs & Tours</span>
+                </button>
+                <button onclick="handleQuickJump('career')" data-tab="career" class="stage-tab px-3 py-1.5 rounded-xl font-mono text-xs font-bold border-2 border-ink bg-sand hover:bg-gold transition-all flex items-center gap-1.5 shrink-0">
+                  <span>🎚️ Career Track</span>
+                </button>
+              </div>
+
+              <!-- Instant Search Input across Artists, Tours & Roles -->
+              <div class="relative flex-1 max-w-xs">
+                <i class="ph-bold ph-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-ink/60 text-sm"></i>
+                <input 
+                  type="text" 
+                  id="global-search" 
+                  oninput="handleGlobalSearch(this.value)"
+                  placeholder="Filter artists, tours, roles..." 
+                  class="w-full pl-8 pr-7 py-1.5 bg-cream border-2 border-ink rounded-xl font-mono text-xs focus:outline-none focus:bg-white focus:ring-2 focus:ring-coral"
+                />
+                <button id="clear-search-btn" onclick="clearGlobalSearch()" class="hidden absolute right-2 top-1/2 -translate-y-1/2 text-ink/60 hover:text-coral">
+                  <i class="ph-bold ph-x-circle text-sm"></i>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ==========================================
+               SECTION 1: ARTISTS AGENTED
+          =========================================== -->
+          <section id="section-artists" class="stage-section pop-card rounded-2xl overflow-hidden bg-white scroll-mt-20">
+            <!-- Section Header Banner -->
+            <div class="bg-gold border-b-2 border-ink px-4 sm:px-5 py-3 flex flex-wrap items-center justify-between gap-2">
+              <div class="flex items-center gap-2.5">
+                <span class="w-7 h-7 rounded-lg bg-ink text-gold flex items-center justify-center">
+                  <i class="ph-bold ph-microphone-stage text-sm"></i>
+                </span>
+                <div>
+                  <h2 class="font-display font-extrabold text-base sm:text-lg uppercase tracking-tight leading-none">
+                    Artists Agented // Festival Roster
+                  </h2>
+                  <p class="font-mono text-[11px] text-ink/80 mt-0.5">
+                    Talent representation, touring strategy & brand partnerships
+                  </p>
+                </div>
+              </div>
+              <span class="font-mono text-xs font-extrabold bg-white border-2 border-ink px-2.5 py-0.5 rounded-full shadow-pop-sm">
+                ROSTER LINEUP
+              </span>
+            </div>
+
+            <!-- Artists Lineup Grid (Dense 2-to-5 col pop badges) -->
+            <div class="p-4 sm:p-5">
+              <div id="artists-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2.5">
+                <!-- Populated dynamically via JS -->
+              </div>
+            </div>
+          </section>
+
+          <!-- ==========================================
+               SECTION 2: LIVE IPs, FESTIVALS & TOURS
+          =========================================== -->
+          <section id="section-ips" class="stage-section pop-card rounded-2xl overflow-hidden bg-white scroll-mt-20">
+            <!-- Section Header Banner -->
+            <div class="bg-coral text-white border-b-2 border-ink px-4 sm:px-5 py-3 flex flex-wrap items-center justify-between gap-2">
+              <div class="flex items-center gap-2.5">
+                <span class="w-7 h-7 rounded-lg bg-white text-ink border-2 border-ink flex items-center justify-center">
+                  <i class="ph-bold ph-ticket text-sm"></i>
+                </span>
+                <div>
+                  <h2 class="font-display font-extrabold text-base sm:text-lg uppercase tracking-tight leading-none">
+                    Live IPs, Festivals & India Tours
+                  </h2>
+                  <p class="font-mono text-[11px] text-white/90 mt-0.5">
+                    Major international & domestic touring properties curated & executed
+                  </p>
+                </div>
+              </div>
+
+              <!-- Quick Filter Pills for IPs -->
+              <div class="flex items-center gap-1.5 bg-ink/20 p-1 rounded-xl border border-white/30">
+                <button onclick="filterIPs('ALL')" data-ip-filter="ALL" class="ip-filter-btn px-2.5 py-1 rounded-lg font-mono text-[11px] font-bold bg-white text-ink border border-ink transition-all">
+                  All
+                </button>
+                <button onclick="filterIPs('SteppinOut')" data-ip-filter="SteppinOut" class="ip-filter-btn px-2.5 py-1 rounded-lg font-mono text-[11px] font-bold text-white hover:bg-white/20 transition-all">
+                  SteppinOut
+                </button>
+                <button onclick="filterIPs('Envision India')" data-ip-filter="Envision India" class="ip-filter-btn px-2.5 py-1 rounded-lg font-mono text-[11px] font-bold text-white hover:bg-white/20 transition-all">
+                  Envision India
+                </button>
+              </div>
+            </div>
+
+            <!-- Ticket Stub Dense Grid -->
+            <div class="p-4 sm:p-5">
+              <div id="ips-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+                <!-- Populated dynamically via JS -->
+              </div>
+            </div>
+          </section>
+
+          <!-- ==========================================
+               SECTION 3: CAREER TRACK / SETLIST
+          =========================================== -->
+          <section id="section-career" class="stage-section pop-card rounded-2xl overflow-hidden bg-white scroll-mt-20">
+            <!-- Section Header Banner -->
+            <div class="bg-mint border-b-2 border-ink px-4 sm:px-5 py-3 flex flex-wrap items-center justify-between gap-2">
+              <div class="flex items-center gap-2.5">
+                <span class="w-7 h-7 rounded-lg bg-ink text-mint flex items-center justify-center">
+                  <i class="ph-bold ph-sliders-horizontal text-sm"></i>
+                </span>
+                <div>
+                  <h2 class="font-display font-extrabold text-base sm:text-lg uppercase tracking-tight leading-none text-ink">
+                    Career Setlist // Experience Track
+                  </h2>
+                  <p class="font-mono text-[11px] text-ink/80 mt-0.5">
+                    Click any credit card to toggle full role details • Compact 2-column layout
+                  </p>
+                </div>
+              </div>
+
+              <!-- Filter / Expand Controls -->
+              <div class="flex items-center gap-1.5">
+                <button onclick="toggleCareerDetailsAll()" id="expand-all-career-btn" class="pop-btn bg-white text-ink font-mono text-[11px] font-bold px-2.5 py-1 rounded-lg flex items-center gap-1">
+                  <i class="ph-bold ph-arrows-out-line-vertical"></i>
+                  <span>Expand Details</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Career Compact 2-Column Grid -->
+            <div class="p-4 sm:p-5">
+              <div id="career-grid" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <!-- Populated dynamically via JS -->
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- FLOATING MOBILE BOTTOM QUICK-GO-TO DOCK -->
+    <div class="fixed bottom-3 inset-x-3 z-40 lg:hidden">
+      <div class="bg-ink text-white border-2 border-ink rounded-2xl shadow-pop-lg p-1.5 flex items-center justify-between gap-1">
+        <button onclick="handleQuickJump('all')" class="mobile-dock-btn flex-1 py-2 rounded-xl font-mono text-[11px] font-bold flex flex-col items-center justify-center bg-gold text-ink">
+          <i class="ph-bold ph-squares-four text-sm"></i>
+          <span>Overview</span>
+        </button>
+        <button onclick="handleQuickJump('artists')" class="mobile-dock-btn flex-1 py-2 rounded-xl font-mono text-[11px] font-bold flex flex-col items-center justify-center text-white/85 hover:text-white">
+          <i class="ph-bold ph-microphone-stage text-sm text-coral"></i>
+          <span>Artists</span>
+        </button>
+        <button onclick="handleQuickJump('ips')" class="mobile-dock-btn flex-1 py-2 rounded-xl font-mono text-[11px] font-bold flex flex-col items-center justify-center text-white/85 hover:text-white">
+          <i class="ph-bold ph-ticket text-sm text-gold"></i>
+          <span>Live IPs</span>
+        </button>
+        <button onclick="handleQuickJump('career')" class="mobile-dock-btn flex-1 py-2 rounded-xl font-mono text-[11px] font-bold flex flex-col items-center justify-center text-white/85 hover:text-white">
+          <i class="ph-bold ph-sliders-horizontal text-sm text-mint"></i>
+          <span>Career</span>
+        </button>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="px-3 py-2 rounded-xl font-mono text-[11px] font-bold flex flex-col items-center justify-center bg-coral text-white" title="Back to top">
+          <i class="ph-bold ph-arrow-up text-sm"></i>
+          <span>Top</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- BOOKING / QUICK CONTACT MODAL -->
+    <div id="contact-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-ink/60 backdrop-blur-xs p-4">
+      <div class="pop-card rounded-2xl max-w-md w-full bg-cream overflow-hidden animate-fadeIn">
+        <div class="bg-coral text-white px-5 py-3.5 border-b-2 border-ink flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <i class="ph-bold ph-Broadcast text-lg"></i>
+            <h3 class="font-display font-extrabold text-base uppercase">Direct Backstage Line</h3>
+          </div>
+          <button onclick="closeContactModal()" class="w-7 h-7 rounded-lg bg-white text-ink border-2 border-ink flex items-center justify-center font-bold hover:bg-gold">
+            ✕
+          </button>
+        </div>
+        <div class="p-5 space-y-3">
+          <p class="text-xs sm:text-sm text-ink/80">
+            Reach out directly for artist bookings, festival programming, nationwide tour curation, or brand partnerships.
+          </p>
+
+          <div class="bg-white border-2 border-ink rounded-xl p-3 flex items-center justify-between">
+            <div>
+              <div class="font-mono text-[10px] uppercase text-ink/60">Email</div>
+              <div class="font-mono text-xs sm:text-sm font-bold">prathyushdinesh@gmail.com</div>
+            </div>
+            <div class="flex gap-1.5">
+              <button onclick="copyText('prathyushdinesh@gmail.com', 'Email copied!')" class="pop-btn bg-gold text-ink px-2.5 py-1.5 rounded-lg font-mono text-xs font-bold">
+                Copy
+              </button>
+              <a href="mailto:prathyushdinesh@gmail.com" class="pop-btn bg-ink text-white px-2.5 py-1.5 rounded-lg font-mono text-xs font-bold">
+                Mail
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white border-2 border-ink rounded-xl p-3 flex items-center justify-between">
+            <div>
+              <div class="font-mono text-[10px] uppercase text-ink/60">Phone / WhatsApp</div>
+              <div class="font-mono text-xs sm:text-sm font-bold">+91 9902602989</div>
+            </div>
+            <div class="flex gap-1.5">
+              <button onclick="copyText('+919902602989', 'Phone copied!')" class="pop-btn bg-gold text-ink px-2.5 py-1.5 rounded-lg font-mono text-xs font-bold">
+                Copy
+              </button>
+              <a href="tel:+919902602989" class="pop-btn bg-mint text-ink px-2.5 py-1.5 rounded-lg font-mono text-xs font-bold">
+                Call
+              </a>
+            </div>
+          </div>
+
+          <div class="pt-2 flex items-center justify-between gap-2">
+            <a href="https://www.linkedin.com/in/prathyush-dinesh-57b28447/" target="_blank" rel="noopener noreferrer" class="pop-btn flex-1 bg-white hover:bg-gold py-2 rounded-xl font-mono text-xs font-bold text-center">
+              LinkedIn ↗
+            </a>
+            <a href="https://www.instagram.com/iampraty/" target="_blank" rel="noopener noreferrer" class="pop-btn flex-1 bg-white hover:bg-gold py-2 rounded-xl font-mono text-xs font-bold text-center">
+              Instagram ↗
+            </a>
+            <a href="https://www.imdb.com/name/nm18253220/" target="_blank" rel="noopener noreferrer" class="pop-btn flex-1 bg-white hover:bg-gold py-2 rounded-xl font-mono text-xs font-bold text-center">
+              IMDb ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="fixed bottom-20 lg:bottom-6 right-6 z-50 pointer-events-none opacity-0 translate-y-2 transition-all duration-200">
+      <div class="bg-ink text-gold border-2 border-ink shadow-pop px-4 py-2.5 rounded-xl font-mono text-xs font-bold flex items-center gap-2">
+        <i class="ph-fill ph-check-circle text-mint text-base"></i>
+        <span id="toast-message">Copied to clipboard!</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- APPLICATION DATA & INTERACTIVE LOGIC -->
+  <script>
+    // 1. Artists Agented Data (10)
+    const artistsData = [
+      { name: "Indo Warehouse", vibe: "Electronic / South Asian House", badge: "HEADLINER", accent: "bg-coral text-white" },
+      { name: "Sid Sriram", vibe: "Soul / Indie / Playback", badge: "HEADLINER", accent: "bg-gold text-ink" },
+      { name: "DIVINE", vibe: "Gully Rap / Hip-Hop", badge: "HEADLINER", accent: "bg-cobalt text-white" },
+      { name: "Hanumankind", vibe: "Hip-Hop / Alternative Rap", badge: "BREAKOUT", accent: "bg-mint text-ink" },
+      { name: "Quickstyle", vibe: "Global Dance Collective", badge: "SPECIAL ACT", accent: "bg-gold text-ink" },
+      { name: "Rusha & Blizza", vibe: "Electronic / Experimental", badge: "ELECTRONIC", accent: "bg-coral text-white" },
+      { name: "DJ Shaan", vibe: "EDM / Festival Mainstage", badge: "ELECTRONIC", accent: "bg-cobalt text-white" },
+      { name: "Lagori", vibe: "Folk-Rock / Indie Fusion", badge: "LIVE BAND", accent: "bg-mint text-ink" },
+      { name: "Hrishi", vibe: "Hip-Hop / Producer", badge: "ROSTER", accent: "bg-gold text-ink" },
+      { name: "DJ Priyanka (ThePriPri)", vibe: "Open Format / Club", badge: "ELECTRONIC", accent: "bg-coral text-white" }
+    ];
+
+    // 2. Live IPs, Festivals & Tours Data (19)
+    const ipsData = [
+      { title: "SteppinOut Music Festival", org: "SteppinOut", type: "Flagship Festival", icon: "ph-tent" },
+      { title: "Bryan Adams India Tour", org: "Envision India", type: "Arena Tour", icon: "ph-guitar" },
+      { title: "Alan Walker India Tour", org: "Envision India", type: "Arena Electronic", icon: "ph-headphones" },
+      { title: "Dubfire India Tour", org: "Envision India", type: "Underground Techno", icon: "ph-vinyl-record" },
+      { title: "Catz 'n Dogz India Tour", org: "Envision India", type: "House / Club Tour", icon: "ph-speaker-high" },
+      { title: "The Yellow Diary India Tour", org: "SteppinOut", type: "Alt-Rock Tour", icon: "ph-music-notes" },
+      { title: "Anuv Jain India Tour", org: "SteppinOut", type: "Indie Acoustic Tour", icon: "ph-microphone-stage" },
+      { title: "Dhvani Bhanushali India Tour", org: "SteppinOut", type: "Pop Live Tour", icon: "ph-star-four" },
+      { title: "Armaan Malik India Tour", org: "SteppinOut", type: "Pop Headliner Tour", icon: "ph-sparkle" },
+      { title: "Troyboi India Tour", org: "SteppinOut", type: "Trap / Bass Tour", icon: "ph-waveform" },
+      { title: "King India Tour", org: "SteppinOut", type: "Hip-Hop / Pop Tour", icon: "ph-crown" },
+      { title: "Dikshant India Tour", org: "SteppinOut", type: "Indie Singer-Songwriter", icon: "ph-music-note" },
+      { title: "Jasleen Royal India Tour", org: "SteppinOut", type: "Indie Pop Tour", icon: "ph-piano-keys" },
+      { title: "Bonobo India Tour", org: "SteppinOut", type: "Electronic Live/DJ", icon: "ph-planet" },
+      { title: "FKJ India Tour", org: "SteppinOut", type: "Multi-Instrumentalist", icon: "ph-sliders" },
+      { title: "Farhan Akhtar India Tour", org: "SteppinOut", type: "Live Rock Concert", icon: "ph-lightning" },
+      { title: "Brunch Electronik India", org: "Envision India", type: "Daytime Festival IP", icon: "ph-sun" },
+      { title: "Casa Bacardi ft. Priyanka", org: "Envision India", type: "Brand Experience IP", icon: "ph-martini" },
+      { title: "Absolutally Pride Night", org: "Envision India", type: "Cultural Brand IP", icon: "ph-confetti" }
+    ];
+
+    // 3. Career History Data (10)
+    const careerData = [
+      {
+        num: "01",
+        role: "Agent",
+        company: "All Things Loud - ATL",
+        tag: "CURRENT / LEAD",
+        color: "bg-coral text-white",
+        desc: "Music Talent Agent handling artist bookings and commercial opportunities across live music and events. Working with artists alongside artist curation and programming for festivals, concerts, and events."
+      },
+      {
+        num: "02",
+        role: "Touring Agent (Music) & Lead Electronic Division",
+        company: "Collective Artist Network",
+        tag: "TOURING & ELECTRONIC",
+        color: "bg-gold text-ink",
+        desc: "Worked closely with leading artists focusing on touring strategy, brand collaborations, and building the electronic music ecosystem."
+      },
+      {
+        num: "03",
+        role: "Head IPs & Live Events",
+        company: "Envision India",
+        tag: "HEAD OF IPs",
+        color: "bg-cobalt text-white",
+        desc: "Spearheaded major projects showcasing expertise in event planning, artist management, and brand partnerships."
+      },
+      {
+        num: "04",
+        role: "Touring Agent (Music)",
+        company: "Collective Artist Network",
+        tag: "TALENT & TOURS",
+        color: "bg-mint text-ink",
+        desc: "Specialized in managing top talents with a strong focus on organizing tours and securing brand partnerships."
+      },
+      {
+        num: "05",
+        role: "IP Lead (Music)",
+        company: "SteppinOut (Swiggy / Dineout)",
+        tag: "NATIONWIDE IPs",
+        color: "bg-gold text-ink",
+        desc: "Developed live touring plans for music artists, managing ticketed shows online and on-ground. Collaborated with artists, agencies, venues, and promoters for nationwide gig strategies."
+      },
+      {
+        num: "06",
+        role: "Business Development Manager",
+        company: "Skillbox",
+        tag: "GROWTH & BD",
+        color: "bg-sand text-ink",
+        desc: "Identified and maximized business opportunities, and increased client retention rates."
+      },
+      {
+        num: "07",
+        role: "Inside Sales Manager",
+        company: "Hubilo Virtual",
+        tag: "EVENT TECH",
+        color: "bg-sand text-ink",
+        desc: "Engaged with potential and existing customers via phone and email, promptly responding to CRM system alerts and leads generated from targeted marketing initiatives."
+      },
+      {
+        num: "08",
+        role: "Business Development",
+        company: "Paytm Insider",
+        tag: "TICKETING & LIVE",
+        color: "bg-sand text-ink",
+        desc: "Identified entertainment partners, strategized revenue growth, nurtured relationships, and managed event marketing while meeting targets and KPIs."
+      },
+      {
+        num: "09",
+        role: "Operations Intern",
+        company: "Paytm Insider",
+        tag: "BOX OFFICE OPS",
+        color: "bg-sand text-ink",
+        desc: "Managed Box-Offices and all ticking related aspects."
+      },
+      {
+        num: "10",
+        role: "Loudest Crew (Internship)",
+        company: "Only Much Louder",
+        tag: "FESTIVAL PROMO",
+        color: "bg-sand text-ink",
+        desc: "Event Promotion, Marketing and Sales."
+      }
+    ];
+
+    // State
+    let currentLayoutMode = 'bento'; // 'bento' or 'compact'
+    let activeTab = 'all';
+    let currentIPFilter = 'ALL';
+    let searchQuery = '';
+    let careerExpandedAll = false;
+
+    // Render Artists Roster (Clean Pop Cards without Numbering)
+    function renderArtists() {
+      const container = document.getElementById('artists-grid');
+      const filtered = artistsData.filter(a =>
+        a.name.toLowerCase().includes(searchQuery) ||
+        a.vibe.toLowerCase().includes(searchQuery)
+      );
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div class="col-span-full text-center py-4 font-mono text-xs text-ink/60">No matching artists found.</div>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map((artist) => `
+        <div class="pop-card-interactive bg-cream border-2 border-ink rounded-xl p-3 flex flex-col justify-between shadow-pop-sm relative overflow-hidden group">
+          <div class="flex items-center justify-between gap-1 mb-2">
+            <span class="font-mono text-[9px] font-extrabold px-1.5 py-0.5 rounded border border-ink uppercase ${artist.accent}">
+              ${artist.badge}
+            </span>
+            <i class="ph-fill ph-vinyl-record text-ink/40 group-hover:text-coral group-hover:rotate-45 transition-all text-base"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-extrabold text-sm sm:text-base text-ink leading-tight group-hover:text-coral transition-colors">
+              ${artist.name}
+            </h3>
+            <p class="font-mono text-[10px] text-ink/70 mt-1 truncate">
+              ${artist.vibe}
+            </p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Render Live IPs & Tours
+    function renderIPs() {
+      const container = document.getElementById('ips-grid');
+      const filtered = ipsData.filter(item => {
+        const matchesOrg = currentIPFilter === 'ALL' || item.org === currentIPFilter;
+        const matchesSearch = item.title.toLowerCase().includes(searchQuery) ||
+                              item.org.toLowerCase().includes(searchQuery) ||
+                              item.type.toLowerCase().includes(searchQuery);
+        return matchesOrg && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div class="col-span-full text-center py-4 font-mono text-xs text-ink/60">No matching tours or IPs found.</div>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map((ip, index) => {
+        const isSteppin = ip.org === 'SteppinOut';
+        const badgeClass = isSteppin
+          ? 'bg-gold text-ink'
+          : 'bg-cobalt text-white';
+
+        return `
+          <div class="ticket-stub pop-card-interactive bg-cream border-2 border-ink rounded-xl px-3.5 py-2.5 shadow-pop-sm flex items-center justify-between gap-2.5">
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center gap-1.5 mb-1">
+                <span class="font-mono text-[9px] font-extrabold uppercase px-1.5 py-0.2 rounded border border-ink ${badgeClass}">
+                  ${ip.org}
+                </span>
+                <span class="font-mono text-[9px] text-ink/60 truncate">• ${ip.type}</span>
+              </div>
+              <h3 class="font-display font-extrabold text-xs sm:text-sm text-ink leading-snug truncate" title="${ip.title}">
+                ${ip.title}
+              </h3>
+            </div>
+            <div class="w-8 h-8 rounded-lg bg-white border-2 border-ink flex items-center justify-center shrink-0 text-ink">
+              <i class="ph-bold ${ip.icon} text-sm"></i>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Render Career History
+    function renderCareer() {
+      const container = document.getElementById('career-grid');
+      const filtered = careerData.filter(c =>
+        c.role.toLowerCase().includes(searchQuery) ||
+        c.company.toLowerCase().includes(searchQuery) ||
+        c.desc.toLowerCase().includes(searchQuery)
+      );
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div class="col-span-full text-center py-4 font-mono text-xs text-ink/60">No matching career roles found.</div>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map((item, idx) => {
+        const isOpen = careerExpandedAll || idx < 4 || searchQuery.length > 0;
+        return `
+          <div onclick="toggleSingleCareer(${idx})" class="pop-card-interactive cursor-pointer bg-cream border-2 border-ink rounded-xl p-3.5 shadow-pop-sm flex flex-col justify-between transition-all">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-1.5">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-mono text-[9px] font-extrabold px-1.5 py-0.5 rounded border border-ink uppercase ${item.color}">
+                    ${item.tag}
+                  </span>
+                  <span class="font-mono text-[10px] font-bold uppercase text-ink/70">
+                    ${item.company}
+                  </span>
+                </div>
+                <i id="career-icon-${idx}" class="ph-bold ${isOpen ? 'ph-caret-up' : 'ph-caret-down'} text-xs text-ink/70"></i>
+              </div>
+
+              <h3 class="font-display font-extrabold text-sm sm:text-base text-ink leading-snug">
+                ${item.role}
+              </h3>
+            </div>
+
+            <div id="career-desc-${idx}" class="${isOpen ? 'block' : 'hidden'} mt-2 pt-2 border-t border-dashed border-ink/30 text-xs text-ink/80 leading-relaxed">
+              ${item.desc}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function toggleSingleCareer(idx) {
+      const descEl = document.getElementById(`career-desc-${idx}`);
+      const iconEl = document.getElementById(`career-icon-${idx}`);
+      if (!descEl) return;
+      const isHidden = descEl.classList.contains('hidden');
+      if (isHidden) {
+        descEl.classList.remove('hidden');
+        iconEl.classList.replace('ph-caret-down', 'ph-caret-up');
+      } else {
+        descEl.classList.add('hidden');
+        iconEl.classList.replace('ph-caret-up', 'ph-caret-down');
+      }
+    }
+
+    function toggleCareerDetailsAll() {
+      careerExpandedAll = !careerExpandedAll;
+      const btn = document.getElementById('expand-all-career-btn');
+      btn.innerHTML = careerExpandedAll
+        ? `<i class="ph-bold ph-arrows-in-line-vertical"></i><span>Compact View</span>`
+        : `<i class="ph-bold ph-arrows-out-line-vertical"></i><span>Expand Details</span>`;
+      renderCareer();
+    }
+
+    // Filter Live IPs by Organization
+    function filterIPs(org) {
+      currentIPFilter = org;
+      document.querySelectorAll('.ip-filter-btn').forEach(btn => {
+        if (btn.dataset.ipFilter === org) {
+          btn.className = 'ip-filter-btn px-2.5 py-1 rounded-lg font-mono text-[11px] font-bold bg-white text-ink border border-ink transition-all';
+        } else {
+          btn.className = 'ip-filter-btn px-2.5 py-1 rounded-lg font-mono text-[11px] font-bold text-white hover:bg-white/20 transition-all';
+        }
+      });
+      renderIPs();
+    }
+
+    // Layout Mode Switcher: 'compact' (Tabbed Zero-Scroll) vs 'bento' (Stacked)
+    function setLayoutMode(mode) {
+      currentLayoutMode = mode;
+      const compactBtn = document.getElementById('mode-compact-btn');
+      const bentoBtn = document.getElementById('mode-bento-btn');
+
+      if (mode === 'compact') {
+        compactBtn.className = 'px-2.5 py-1 rounded-full font-bold transition-all bg-ink text-white flex items-center gap-1';
+        bentoBtn.className = 'px-2.5 py-1 rounded-full font-bold transition-all text-ink/75 hover:text-ink flex items-center gap-1';
+        // If currently showing 'all', switch to 'artists' for true zero-scroll deck
+        if (activeTab === 'all') {
+          applySectionVisibility('artists');
+        } else {
+          applySectionVisibility(activeTab);
+        }
+      } else {
+        bentoBtn.className = 'px-2.5 py-1 rounded-full font-bold transition-all bg-ink text-white flex items-center gap-1';
+        compactBtn.className = 'px-2.5 py-1 rounded-full font-bold transition-all text-ink/75 hover:text-ink flex items-center gap-1';
+        applySectionVisibility('all');
+      }
+    }
+
+    // Quick Go-To Navigation Handler
+    function handleQuickJump(target) {
+      activeTab = target;
+      updateActiveNavStyles(target);
+
+      if (target === 'all') {
+        document.querySelectorAll('.stage-section').forEach(s => s.classList.remove('hidden'));
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      if (currentLayoutMode === 'compact') {
+        applySectionVisibility(target);
+      } else {
+        // Make sure all sections are visible and smooth scroll directly or isolate if clicked in stage controller
+        document.querySelectorAll('.stage-section').forEach(s => s.classList.remove('hidden'));
+        const sectionEl = document.getElementById(`section-${target}`);
+        if (sectionEl) {
+          sectionEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    }
+
+    function applySectionVisibility(target) {
+      activeTab = target;
+      updateActiveNavStyles(target);
+      const sections = ['artists', 'ips', 'career'];
+      sections.forEach(sec => {
+        const el = document.getElementById(`section-${sec}`);
+        if (target === 'all' || sec === target) {
+          el.classList.remove('hidden');
+        } else {
+          el.classList.add('hidden');
+        }
+      });
+    }
+
+    function updateActiveNavStyles(target) {
+      // Update stage tabs
+      document.querySelectorAll('.stage-tab').forEach(tab => {
+        if (tab.dataset.tab === target) {
+          tab.className = 'stage-tab px-3 py-1.5 rounded-xl font-mono text-xs font-bold border-2 border-ink bg-ink text-white transition-all flex items-center gap-1.5 shrink-0';
+        } else {
+          tab.className = 'stage-tab px-3 py-1.5 rounded-xl font-mono text-xs font-bold border-2 border-ink bg-sand hover:bg-gold transition-all flex items-center gap-1.5 shrink-0';
+        }
+      });
+
+      // Update header quick-nav buttons
+      const navIds = ['all', 'artists', 'ips', 'career'];
+      navIds.forEach(id => {
+        const btn = document.getElementById(`nav-btn-${id}`);
+        if (!btn) return;
+        if (id === target) {
+          btn.classList.add('bg-gold');
+          btn.classList.remove('bg-white');
+        } else {
+          btn.classList.remove('bg-gold');
+          btn.classList.add('bg-white');
+        }
+      });
+    }
+
+    // Global Search across all sections
+    function handleGlobalSearch(val) {
+      searchQuery = val.trim().toLowerCase();
+      const clearBtn = document.getElementById('clear-search-btn');
+      if (searchQuery.length > 0) {
+        clearBtn.classList.remove('hidden');
+        // Show all sections when searching
+        document.querySelectorAll('.stage-section').forEach(s => s.classList.remove('hidden'));
+      } else {
+        clearBtn.classList.add('hidden');
+        if (currentLayoutMode === 'compact' && activeTab !== 'all') {
+          applySectionVisibility(activeTab);
+        }
+      }
+      renderArtists();
+      renderIPs();
+      renderCareer();
+    }
+
+    function clearGlobalSearch() {
+      const input = document.getElementById('global-search');
+      input.value = '';
+      handleGlobalSearch('');
+    }
+
+    // Clipboard helper using execCommand for iframe compatibility
+    function copyText(text, message) {
+      const tempInput = document.createElement('textarea');
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      showToast(message || 'Copied to clipboard!');
+    }
+
+    let toastTimeout;
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const msgEl = document.getElementById('toast-message');
+      msgEl.textContent = msg;
+      toast.classList.remove('opacity-0', 'translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2400);
+    }
+
+    // Contact Modal Controls
+    function openContactModal() {
+      const modal = document.getElementById('contact-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeContactModal() {
+      const modal = document.getElementById('contact-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Initialize on load
+    window.addEventListener('DOMContentLoaded', () => {
+      renderArtists();
+      renderIPs();
+      renderCareer();
+    });
+  </script>
+</body>
+</html>
